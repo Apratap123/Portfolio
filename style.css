@@ -290,7 +290,6 @@ section {
   /* margin-right: 20px; */
 }
 
-
 .arrow {
   position: absolute;
   right: -5rem;
@@ -309,7 +308,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 60%;
 }
 
 .section__pic-container {
@@ -375,9 +374,9 @@ article .icon {
   height: 50%;
 }
 
-.article-container{
+.article-container {
   width: 90%;
-  height: auto;  
+  height: auto;
 }
 
 .project-title {
@@ -439,19 +438,64 @@ footer {
 
 footer p {
   text-align: center;
-} 
+}
 
-.title-fixing{
+.title-fixing {
   margin-top: 70px;
 }
-.title-fixing2{
+.title-fixing2 {
   margin-top: 80px;
 }
 
 /* media */
 
-@media (max-width:1200px) {
-  .disabled-pic{
+@media (max-width: 1200px) {
+  .disabled-pic {
     display: none;
+  }
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Container for project cards */
+.experience-details-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on larger screens */
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for each project card */
+.project-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 700px) {
+  .experience-details-container {
+    display: flex;
+    flex-direction: column; /* Stack the cards in a column */
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%; /* Ensure each card takes full width */
+    margin: 0 auto 20px auto; /* Center the card and add spacing */
+  }
+
+  .btn-container {
+    text-align: center;
   }
 }
